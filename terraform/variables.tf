@@ -8,13 +8,12 @@ variable "aws_region" {
 variable "cluster_name" {
   description = "Name of the EKS cluster"
   type        = string
-  default     = "voting-app-eks"
+  default     = "thoughtful-funk-seal"
 }
-
 variable "kubernetes_version" {
   description = "Kubernetes version for the EKS cluster"
   type        = string
-  default     = "1.33"
+  default     = "1.37"
 }
 
 variable "node_instance_type" {
