@@ -4,3 +4,27 @@ bin/
 obj/
 .vs/
 node_modules/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Keep dependency lock files tracked
+!**/.terraform.lock.hcl
+
+# Environment files
+.env
+.env.*
+!.env.example
